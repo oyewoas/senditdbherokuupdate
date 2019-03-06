@@ -12,7 +12,7 @@
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "dev-start": "nodemon --watch . --exec babel-node -- server.js",
     "pre-start": "babel-node server.js",
-    "start": "npm run dev-start && npm run create-tables && npm run test"
+    "start": "npm run pre-start && npm run create-tables && npm run test"
   },
   "repository": {
     "type": "git",
