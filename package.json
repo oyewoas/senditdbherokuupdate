@@ -11,7 +11,7 @@
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul  cover _mocha -- -R spec \"./test/*.spec.js\" --timeout 15000000 --compilers js:babel-core/register",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "dev-start": "nodemon --watch . --exec babel-node -- server.js --presetenv",
-    "start": "./node_modules/.bin/babel-node server.js",
+    "start": "babel-node server.js",
     "builded": "npm run pre-start && npm run create-tables && npm run test"
   },
   "repository": {
