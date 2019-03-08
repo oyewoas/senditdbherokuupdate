@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/oyewoas/senditdatabase#readme",
   "dependencies": {
-    "babel": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
