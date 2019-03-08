@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register \"./tests/*.spec.js\" --timeout 150000",
     "create-tables": "babel-node ./app/db/db createAllTables",
-    "heroku-postbuild": "npm install",
+    "heroku-postbuild": "npm install --production",
     "build": "babel server.js --out-dir build",
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul  cover _mocha -- -R spec \"./test/*.spec.js\" --timeout 15000000 --compilers js:babel-core/register",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
