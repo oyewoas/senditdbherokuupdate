@@ -28,8 +28,6 @@ app.use(cors());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 router(app);
 
-
-
 // listen for requests
 const server = app.listen(port, () => {
   console.log(`Server is listening at this port ${port}`);
