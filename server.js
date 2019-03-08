@@ -29,9 +29,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 router(app);
 
 
-app.get('/', (req, res) => {
-  res.status(200).json({ message: Welcome to Node.js & Express });
-});
+
 // listen for requests
 const server = app.listen(port, () => {
   console.log(`Server is listening at this port ${port}`);
