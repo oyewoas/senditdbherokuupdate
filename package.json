@@ -11,7 +11,7 @@
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul  cover _mocha -- -R spec \"./test/*.spec.js\" --timeout 15000000 --compilers js:babel-core/register",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "dev-start": "nodemon --watch . --exec babel-node -- server.js --presetenv",
-    "start": "babel server.js",
+    "start": "babel-node server.js",
     "builded": "npm run pre-start && npm run create-tables && npm run test"
   },
   "repository": {
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/oyewoas/senditdatabase#readme",
   "dependencies": {
+    "@babel/core": "^7.3.4",
     "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
@@ -51,7 +52,7 @@
     "babel-plugin-istanbul": "^5.1.1",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "babel-watch": "^2.0.8",
+    "babel-watch": "^7.0.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "coveralls": "^3.0.3",
