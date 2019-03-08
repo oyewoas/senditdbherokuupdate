@@ -30,6 +30,7 @@
   "homepage": "https://github.com/oyewoas/senditdatabase#readme",
   "dependencies": {
     "@babel/core": "^7.3.4",
+    "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
@@ -47,7 +48,6 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-istanbul": "^0.12.2",
     "babel-plugin-istanbul": "^5.1.1",
     "babel-preset-env": "^1.7.0",
