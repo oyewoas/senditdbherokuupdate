@@ -2,7 +2,7 @@
   "name": "senditdb",
   "version": "1.0.0",
   "description": "A parcel delivery application database Api",
-  "main": "server.js",
+  "main": "start.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register \"./tests/*.spec.js\" --timeout 150000",
     "create-tables": "babel-node ./app/db/db createAllTables",
