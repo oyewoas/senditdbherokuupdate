@@ -30,6 +30,7 @@
   "homepage": "https://github.com/oyewoas/senditdatabase#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
@@ -57,5 +58,4 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10"
   }
- 
 }
