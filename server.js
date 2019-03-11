@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 
 const swaggerDocument = YAML.load(path.join(process.cwd(), './swagger/swagger.yaml'));
 
-createAllTables();
+// createAllTables();
 // dropAllTables();
 dotenv.config();
 
