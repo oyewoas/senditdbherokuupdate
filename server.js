@@ -11,7 +11,7 @@ import { createAllTables } from './app/db/db';
 import router from './app/routes';
 // import { createAllTables, dropAllTables } from './app/db/db';
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 const swaggerDocument = YAML.load(path.join(process.cwd(), './swagger/swagger.yaml'));
 
