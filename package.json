@@ -7,9 +7,9 @@
     "test": "mocha --compilers js:babel-core/register \"./tests/*.spec.js\" --timeout 150000",
     "create-tables": "babel-node ./app/db/db createAllTables",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./src -s",
+    "build-babel": "babel-node -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/server.js",
+    "start": "npm run build && NODE_ENV=production node ./build/server.js",
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul  cover _mocha -- -R spec \"./test/*.spec.js\" --timeout 15000000 --compilers js:babel-core/register",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "dev-start": "nodemon --watch . --exec babel-node -- server.js --presetenv",
@@ -31,7 +31,6 @@
   "homepage": "https://github.com/oyewoas/senditdatabase#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
@@ -49,6 +48,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.8",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
@@ -58,4 +58,5 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10"
   }
+ 
 }
