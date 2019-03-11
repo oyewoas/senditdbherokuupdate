@@ -11,7 +11,7 @@ import verifyAuth from '../middlewares/verifyAuth';
 export default function route(app) {
   // const badRequest = { status: 400, message: 'Bad Request' };
   app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Welcome to Node.js & Express' });
+    res.status(200).json({ message: 'Welcome to Send It Api built with nodeJs and ExpressJs' });
   });
   // Get Request for a single Parcel
   app.get('/api/v1/parcels/:id', verifyAuth, getAparcel);
