@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel-core/register \"./tests/*.spec.js\" --timeout 150000",
     "create-tables": "babel-node ./app/db/db createAllTables",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel-node -d ./build ./src -s",
+    "build-babel": "node -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && NODE_ENV=production node ./build/server.js",
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul  cover _mocha -- -R spec \"./test/*.spec.js\" --timeout 15000000 --compilers js:babel-core/register",
